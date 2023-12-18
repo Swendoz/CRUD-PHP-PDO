@@ -27,7 +27,7 @@
                     <th>Merk</th>
                     <th>Model</th>
                     <th>Topsnelheid</th>
-                    <th>Prijs</th>
+                    <th>Prijss</th>
                 </tr>
             </thead>
             <tbody>

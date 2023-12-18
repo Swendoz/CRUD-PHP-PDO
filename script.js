@@ -8,5 +8,5 @@ if (statu)
         const newUrl = url.split('?')[ 0 ];
         console.log(newUrl);
         window.history.pushState({}, '', newUrl);
-    }, 3000);
+    }, 3001);
 }
