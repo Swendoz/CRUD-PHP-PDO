@@ -14,9 +14,12 @@
 
         <a href="../index.php" class="button">Kijk records</a>
 
-        <form action="./create_func.php" method="POST">
-            <?php if (isset($_GET['status']) && $_GET['status'] != null) { ?>
-            <div class="status"> <?php echo $_GET['status']; ?> </div>
+        <form action="./create_func.php" method="POST" autocomplete="off">
+            <?php if (isset($_GET['status']) && $_GET['status'] != null) {
+                $getStatus = explode('-', $_GET["status"]);
+            ?>
+            <div class='<?php echo "status {$getStatus[0]}"; ?>'>
+                <?php echo $getStatus[1] ?> </div>
             <?php } ?>
 
             <label for="Merk">Merk</label>
